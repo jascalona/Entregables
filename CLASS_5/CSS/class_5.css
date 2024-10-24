@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3f3;
+}
+
+article h1{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.gallery{
+  padding: 2%;
+  display: grid;
+  gap: 4%;
+}
+
+.gallery-item{
+  border:  1px solid #000;
+  border-radius: 4px;
+  padding: 3%;
+  position: relative;
+  transform: scale(1.1);
+}
+
+@media (min-width: 980px) {
+    .gallery{
+      grid-template-columns: repeat(4 fr);
+    }
+}
+.gallery{
+
+}

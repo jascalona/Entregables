@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-form {
+    max-width: 500px; 
+    margin: 0 auto; 
+    margin-top: 50px;
+    padding: 20px;
+    background: #f3f3f3;
+    border: solid 1px rgba(109, 8, 8, 0.48);
+    border-radius: 8px;
+}
+
+.container-form h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container input{
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 6px;
+    border: solid 1px #66666685;border-radius: 8px;
+}
+
+.container .btn button{
+    background: rgb(27, 211, 27);
+    color: #fff;
+    padding: 6px;
+    border: solid 1px #000000a5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color: #45a049; 
+}
+
+
+/*formulario-condiciones*/
+.container-condiciones {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 10% auto; 
+    background: #f3f3f3;
+    border: solid #45a049 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container-condiciones h3{
+    display: flex;
+    justify-content: center;
+}
+
+.container-condiciones .container-ii{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-ii label{
+    display: inline-block;
+    vertical-align: middle; /*alinea los elementos en vertical*/
+    width: 130px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container-ii input{
+    width: calc(100% -144px) ;
+    padding: 5px 40px;
+    border: solid 1px rgba(89, 16, 16, 0.472);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.container-ii input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="tel"]:focus {
+
+        border-color: #4caf50; /* Cambia el color del borde cuando el campo está enfocado */
+        outline: none; /* Elimina el borde de enfoque predeterminado */
+    }
+
+    /*Estilos para el placeholder*/
+    .container-ii input[type="text"],
+    input[type="email"]::placeholder,
+    input[type="number"]::placeholder,
+    input[type="tel"]::placeholder {
+
+        color: #999;
+        font-style: italic;
+    }
+
+    .btn-ii button{
+        background: #12d118;border: none;
+        color: #fff;
+        border: solid 1px #000;
+        border-radius: 6px;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    .btn-ii button:hover{
+       background: #45a049;
+    }
+
+    /*estilo responsivo*/
+    @media (max-width: 599px){
+        .container-ii label, input[type="text"], input[type="email"] {
+            display: block; width: 100%;  /* Cambia el display de las etiquetas y los campos de entrada a bloque, haciendo que  ocupen todo el ancho disponible */
+           
+        }
+        
+    }
+
+
+    /*Formulario 03 Ecuenta de Satisfaccion*/
+    .container-encuesta{
+        background: #f3f3f3;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        border: solid #00000075 1px;
+        border-radius: 8px;
+    }
+
+    .container-encuesta h3{
+        font-size: 25px;
+        text-align: center;
+        padding: 35px;
+    }
+
+    .container-encuesta .encuestas label{
+        font-weight: bold;
+        margin-bottom: 40px;
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .container-encuesta .encuestas .datosI input{
+        border: solid  brown 1px;
+        padding: 8px;
+        border-radius: 3px;
+        width: 200px;
+        height: 26px;
+    }
+
+    .container-encuesta .encuestas .flex-container {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .container-encuesta .encuestas .datosII input{
+        border: solid brown 1px;
+        padding: 8px;
+        border-radius: 3px;
+        width: 200px;
+        height: 26px;
+    }
+
+    .container-encuesta .encuestas .datosIII input{
+        border:  solid brown 1px;
+        padding: 8px;
+        border-radius: 3px;
+        width: 80px;
+        height: 26px;
+    }
+
+    .container-encuesta .encuestas .datosIV input{
+        border: solid brown 1px;
+        padding: 8px;
+        border-radius: 3px;
+        width: 200px;
+        height: 26px;
+    }
+
+    .container-encuesta .btn-encuesta button{
+        background: #12d118;
+        border: solid 1px #00000061;
+        width: 100%;
+        border-radius: 7px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .container-encuesta .encuestas .btn-encuesta button:hover{
+        background: #45a049;
+    }
+   
