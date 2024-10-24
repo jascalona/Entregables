@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background: #433878;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.checkbtn{
+    display: none;
+    font-size: 30px;
+    color: #E4B1F0;
+    float: right;
+}
+
+#check{
+    display: none;
+}
+
+header .logo{
+    color: #7E60BF;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu li a{
+    color: #FFE1FF;
+    font-size: 15px;
+}
+
+
+/*OCULTAR SUB MENU Y AJUSTE DE PROPIEDADES*/
+.submenu{
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #7E60BF;
+    padding: 15px 5px;
+    border: solid 1px #ffe1ff79;
+    border-radius: 10px 50px;
+}
+
+.submenu li{
+    width: 150px;
+    height: 30px;
+}
+
+.submenu a{
+    padding: 10px 20px;
+}
+
+/*MOSTRAR SUB MENU AL PASAR EL MOUSE*/
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li a:hover{
+    background: #E4B1F0;
+    border-radius: 15px;
+    color: #7E60BF;
+}
+
+.btn{
+    padding: 0 50px;
+}
+
+.btn button{
+    background: #7E60BF;
+    padding: 9px 8px;
+    border:  solid 1px #E4B1F0;
+    border-radius: 5px;
+    color: #FFE1FF;
+}
+
+/*SESION RESPONSIVA*/
+@media (max-width: 801px) {
+    header .logo{
+        font-size: 18px;
+    }
+
+    .menu li a{
+        font-size: 12px;
+    }
+
+    nav .btn{
+        padding: 0 30px;
+    }
+
+    nav .btn button{
+        font-size: 12px;
+        padding: 7px 6px;
+    }
+}
+
+/*MENU ENCABEZADO RESPONSIVO*/
+
+@media (max-width: 600px) {
+    .checkbtn{
+        display: block;
+    }
+    header ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background: #05031cf2;
+        top: 10px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    
+    header ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+        border: solid 1px #b3b3b3;
+        padding: 10px;
+    }
+
+    header ul {
+        display: block;
+        margin: 50px 0;
+        line-height: 10px;
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color: #b3b3b3;
+    }
+    
+    #check:checked ~  ul{
+        left: 0;
+    }
+}

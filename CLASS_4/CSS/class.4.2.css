@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #605a5a;
+}
+
+html{height: 100%;}
+
+body{
+    font-style: 1.2em;
+    min-height: 100%;
+}
+
+
+.grid-container >*{
+    padding: 10px;
+    text-align: center;
+}
+
+/*Se definen las 5 areas de grid con el nombre de las mismas clases*/
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+    background:aquamarine;
+}
+
+.nav{
+    grid-area: nav;
+    background: rgb(57, 56, 56);
+}
+
+.main{
+    grid-area: main;
+    background: #f3f3f3;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: rgb(91, 3, 91);
+}
+
+.footer{
+    grid-area: footer;
+    background: grey;
+}
+
+
+/*SESION RESPONSIVA*/
+
+/*PANTALLAS GRANDES > 900px*/
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+            "header header header" 100px
+            "nav main sidebar" auto
+            "footer footer footer" 100px/
+            200px 1fr 200px            
+        ;
+    }
+}
+
+/*PANTALLAS MEDIANAS CON UN MIMO DE 600px Y UN MAXIMO DE 899*/
+@media (min-width: 600px) and (max-width: 899px) {
+    .grid-container{
+        grid-template:
+            "header header" 100px
+            "nav nav" 50px
+            "sidebar main" auto
+            "footer footer" 100px/200px 1fr
+            ;
+            
+    }
+}

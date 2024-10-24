@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas Combinadas</title>
+
+    <style>
+        table{border-collapse: collapse; width: 100%;}
+        table thead{ background-color: aquamarine;}
+        table tbody tr:hover{background: rgb(177, 173, 173);}
+        tr th{background-color: aquamarine;}
+    </style>
+
+
+</head>
+<body>
+
+    <h3>Celda que se expande por 2 Columnas</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+        <!--Generador de th combinado (tr>th[colspan="2"]{Nombre}+th{Edad})+tr*2>td*3-->
+                <th colspan="2">Nombre</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Marcos</td>
+                <td>43</td>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>Vivas</td>
+                <td>57</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+    <h3>Celda que se expande por 2 filas</h3>
+
+    <table border="1">
+
+        
+        <tr>
+            <th>Nombre</th>
+            <td>Maria</td>
+        </tr>
+        
+        <tr>
+            <th rowspan="2">Telefono</th>
+            <td>0273-5542415</td>
+        </tr>
+
+        <tr>
+            <td>0426-1954225</td>
+        </tr>
+
+    </table>
+
+    
+
+    
+</body>
+</html>
