@@ -1,0 +1,76 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ESTILO PARA EL HEADER */
+header {
+	height: 45vh;
+	width: 100%;
+}
+
+/* ESTILO PARA EL CONTENEDOR DE LOS ITEMS DEL CARRUSEL */
+.cont_items_carru {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* ESTILO PARA CADA ITEM DEL CARRUSEL */
+.item_carru {
+	height: 100%;
+	width: 100%;  
+	position: relative;
+}
+
+/* ESTILO PARA LA IMAGEN DEL ITEM */
+.img_carru {
+	height: 100%;
+	width: 100%;
+}
+
+/* ESTILO PARA LAS FLECHAS DEL ITEM */
+.fle_carru {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+/* ESTILO PARA DIFERENCIAR POR COLORES CADA ITEM. DESPUÉS SE ELIMINAN AL INCORPORAR LAS IMÁGENES */
+#img_item1_carru {
+	background-color: rgb(232, 224, 213);
+}
+
+#img_item2_carru {
+	background-color: rgb(140, 206, 183);
+}
+
+#img_item3_carru {
+	background-color: rgb(242, 154, 135);
+}
+
+/* ESTILO PARA LOS ICONOS DE FLECHA */
+.fle_carru i {
+	color: rgb(166, 149, 149);
+	font-size: x-large;
+}
+ 
+/* ESTILO PARA EL CONTENEDOR DE NAVEGACIÓN POR PUNTOS */
+.conte_puntos_carru {
+	background-color: rgb(136, 129, 148);
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ESTILO PARA LOS ENLACES DE NAVEGACIÓN POR PUNTOS */
+.conte_puntos_carru a {
+	text-decoration: none;
+	color: rgb(33, 100, 78);
+	font-size: 2em;  
+}

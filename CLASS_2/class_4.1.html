@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 01 con Formulario</title>
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="./CSS/class_4.1.css">
+    <!--STYLE-->
+
+</head>
+<body>
+
+
+    <!--Formulario 01-->
+    <div class="container-form">
+    
+        <h3>Algunos campos de Formulario</h3>
+
+        <div class="container">
+
+            <form action="" method="" >
+
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Ingrese su Nombre" >
+                <br>
+                <label for="">Contraseña:</label>
+                <input type="password" placeholder="Ingrese su Contraseña">
+                <br>
+                <label for="">Correo Electronico:</label>
+                <input type="email" placeholder="Ingrese su Correo">
+                <br>
+                <label for="">Fecha de Nacimiento:</label>
+                <input type="date">
+                <br>
+                <label for="">Color Favorito:</label>
+                <input type="color">
+                <br>
+                <label for="">Subir Archivo:</label>
+                <input type="file">
+                <br>
+                <div class="btn">
+                    <button type="submit" value="submit">Enviar</button>
+                </div>
+
+            </form>
+        </div>
+    
+    </div>
+    <!--Formulario 01-->
+
+
+    <!--Formulario 02 con condiciones-->
+
+    <div class="container-condiciones">
+        
+        <h3>Formularios con Condiciones</h3>
+
+        <div class="container-ii">
+            <form action="">
+            
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Ingrese su Nombre"  name="Nombre" id="Nombre" required minlength="3" maxlength="50" >
+                <br><br>
+                <label for="">Correo Electronico:</label>
+                <input type="email" placeholder="Ingrese su Correo" name="Correo" id="Correo" required >
+                <br><br>
+                <label for="">Edad:</label>
+                <input type="number" placeholder="Ingrese su edad" name="edad" id="edad" required min="18" max="100">
+                <br><br>
+                <label for="">Telefono:</label>
+                <input type="tel" name="Telefono" id="Telefono"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required >
+                <br><br>
+                <div class="btn-ii">
+                    <button type="submit" value="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!--Formulario 02 con condiciones-->
+
+
+    <!--Formulario 03 Encuentas de Satisfaccion-->
+        <div class="container-encuesta">
+
+            <h3>Encuenta de Satisfaccion</h3>
+
+            <div class="encuestas">
+            
+            <div class="datosI">    
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Ingrese Su Nombre" name="Nombre" id="Nombre" required minlength="3" maxlength="50" pattern="^[A-Za-z]{3,12} [A-Za-z.]{2,12}$"  >
+            
+                <br>
+                <br>
+
+                <label for="">Correo Electronico:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese Su Correo" required pattern="^[a-zA-Z0-9]{6,30}@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" >
+            </div>
+            
+                <br>
+                <br>
+
+                <!--checkbox-radio-->
+                <label for="">Genero:</label>
+                
+                <div class="flex-container">
+                    
+                    <div class="definition-checkbox">
+                        <input type="radio" id="masculino" name="genero" value="masculino" required >
+                        <label for="">Masculino</label>
+                    </div>
+
+                    <div class="definition-checkbox">
+                        <input type="radio" id="femenino" name="genero" value="femenino" required>
+                        <label for="">Femenino</label>
+                    </div>
+
+                    <div class="definition-checkbox">
+                        <input type="radio" id="Otro" name="genero" value="Otro" required>
+                        <label for="">Otro</label>
+                    </div>
+                </div>
+                <br><br>
+                <!--checkbox-radio-->
+
+                
+                
+                <!--checkbox-->
+                <label for="">Interes:</label>
+
+                <div class="flex-container">
+
+                    <div class="definition-checkbox">
+                        <input type="checkbox" name="interes" id="deportes" value="deportes" required>
+                        <label for="">Deportes</label>
+                    </div>
+                    
+                    <div class="definition-checkbox">
+                        <input type="checkbox" name="interes" id="Musica" value="Musica" required>
+                        <label for="">Musica</label>
+                    </div>
+
+                    <div class="definition-checkbox">
+                        <input type="checkbox" name="interes" id="tecnologia" value="tecnologia" required>
+                        <label for="">Tecnologia</label>
+                    </div>
+
+                </div>
+                <!--checkbox-->
+
+                <br></br>
+
+                <!--Selection-->
+
+                <div class="datosII">
+                    <label for="">Pais</label>
+                    <input list="paises" id="pais" name="pais" placeholder="Seleciona tu Pais" required>
+                    <datalist id="paises">
+                        <option value="Venezuela">
+                        <option value="Colombia">
+                        <option value="Argentina">
+                        <option value="Mexico">
+                        <option value="Espana">
+                    </datalist>
+                </div>
+                <!--Selection-->
+                
+                <br><br>
+
+                <!--nivel de Satisfaccion-->
+                <div class="datosIII">
+                    <label for="">Nivel de Satisfaccion</label>
+                    <input type="number" name="Satisfaccion" id="Satisfaccion" required min="1" max="5" >
+                </div>
+                <!--nivel de Satisfaccion-->
+
+                <br><br>
+
+                <!--Campo para rif-->
+                <div class="datosIV">
+                    <label for="">RIF</label>
+                    <input type="text" name="rif" id="rif" placeholder="V-12345678-9" required pattern="^(^(V|E|J|v|e|j)-[0-9]{8}-(4|8|12|16|20)$)">
+                </div>
+                <!--Campo para rif-->
+
+                <br><br>
+
+                <div class="btn-encuesta">
+                    <button type="submit" name="btn-encuesta" value="submit">Enviar</button>
+                </div>
+
+
+            </div>
+
+        </div>  
+    <!--Formulario 03 Encuentas de Satisfaccion-->
+
+
+
+</body>
+</html>
