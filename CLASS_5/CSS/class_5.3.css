@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #f3f3f3;
+}
+
+header{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 1px 10px rgb(83, 82, 82, 0.446);
+}
+
+header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(105, 102, 102);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+header .logo:hover{
+    transform: scale(1.1);
+    color: #414141;
+}
+
+header .checkbtn{
+    float: right;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 8px;
+    transition: transform 0.3s;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(85, 83, 83);
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+nav ul li a:hover{
+    color: rgb(53, 24, 24);
+}
+
+main{
+    max-width: 80%;
+    margin: 50px auto;
+    background: #fcfcfc64;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+main .title{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(120, 118, 118);
+}
+
+main .iframe{
+    text-align: center;
+    margin-top: 50px;
+}
+
+iframe{
+    width: 80%;
+    height: 500px;
+}
+
+.text{
+    max-width: 90%;
+    margin: 50px auto;
+    color: rgb(85, 83, 83);
+
+}
+
+.text .title{
+    font-size: 35px;
+    line-height: 3;
+}
+
+.text .paragraph{
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.FAQ section{
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary{
+    background-color: rgb(235, 235, 235);
+    transition: transform 0.3s;
+    color: #414141;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 20px;
+}
+
+summary:hover{
+    transform: scale(1.1);
+}
+
+details p{
+    padding: 20px;
+    line-height: 1.5;
+    background: #bebcbc;
+    color: #414141;
+}
+
+@media (max-width: 800px) {
+main .container,iframe{
+    max-width: 100%;
+    padding: 0;
+}
+
+    main .text{
+        max-width: 100%;
+    }
+
+    .container   .title{
+        font-size: 20px;
+        line-height: normal;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .FAQ section{
+        width: 100%;
+        padding: 0;
+    }
+    summary{
+        font-size: 13px;
+    }
+    details p{
+        font-size: 12px;
+    }
+
+}
